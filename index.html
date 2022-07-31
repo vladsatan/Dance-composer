@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Dance Composer</title>
 </head>
-<body>
+<body id="root">
     <header>
         <div class="header-container">
             <h1>Dance Composer</h1>
@@ -21,14 +21,84 @@
         </div>
     </header>
 
+
+
     <section class="info-section">
         <div class="info"><p> <span>DANCE COMPOSER</span> - допомога у створенні танцювальних композицій</p><br>
-        <p>Оберіть лише: программу, клас, танець</p>
+        <p>Оберіть лише програму, клас і танець</p>
     </div>
         
     </section>
 
-    <section id="composer"></section>
+    <section id="composer">
+        <div class="composer-container">
+            Dance Composer
+            <div class="composer-flex">
+                
+                <div class="filter">
+                    <div class="filter-header">Фільтри</div>
+                    <div class="filter-menu">
+
+                        <div class="box">
+                            <h3>Програма</h3>
+                            <select id="program-select">
+                                <option value="0">не вибранно</option>
+                                <option value="1">Стандарт</option>
+                                <option value="2">Латина</option>
+                              </select>
+                        </div>
+
+                        <div class="box">
+                            <h3>Клас</h3>
+                            <select id="class-select">
+                                <option value="3">не вибранно</option>
+                                <option value="4">N клас</option>
+                                <option value="5">E клас</option>
+                                <option value="6">D клас</option>
+                              </select>
+                        </div>
+
+
+                        <div class="box">
+                            <h3>Танець</h3>
+                            <select id="dance-select">
+                                <option value="7">не вибранно</option>
+                            </select>
+                        </div>
+                          
+                        
+                    </div>
+                    <button id="reset-filter" type="button">Прийняти</button>
+
+                    <div class="filter-header">Рекомендовані фігури</div>
+                    <div id="choose-figurs">
+                        <div class="card"> Натуральний поворот</div>
+                        <div class="card"> Натуральний поворот</div>
+                        <div class="card"> Натуральний поворот</div>
+                        <div class="card"> Натуральний поворот</div>
+                        <div class="card"> Натуральний поворот</div>
+                        <div class="card"> Натуральний поворот</div>
+                    </div>
+                </div>
+                <div id="main-window">
+                    <div class="filter-header">Композиція</div>
+                    <div class="main-card">Натуральний поворот </div>
+                    <div class="main-card">Натуральний поворот </div>
+                    <div class="main-card">Натуральний поворот </div>
+
+                </div>
+                
+            </div>
+        </div>
+       
+    </section>
+
+
+
+
+
+
+
 
     <section id="ballroom"></section>
 
